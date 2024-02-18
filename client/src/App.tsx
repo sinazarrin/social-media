@@ -1,6 +1,8 @@
+import routers from "./routes"
+
 const App = () => {
   return (
-    <div>App</div>
+    <div>{routers()}</div>
   )
 }
 

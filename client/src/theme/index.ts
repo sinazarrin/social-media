@@ -30,7 +30,7 @@ export const colorTokens = {
 
 
 
-const themeSettings = (mode) => {
+const themeSettings = (mode:string) => {
     return {
         palette: {
             mode,

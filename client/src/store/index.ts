@@ -5,11 +5,13 @@ import storage from "redux-persist/lib/storage";
 import { FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from "redux-persist";
 import authSlice from "./slices/authSlice";
 import postsSlice from "./slices/postsSlice";
+import themeSlice from "./slices/themeSlice";
 
 // Combine reducers
 const rootReducer = combineReducers({
   auth: authSlice,
   posts: postsSlice,
+  theme: themeSlice
   // Add other slices here
 });
 

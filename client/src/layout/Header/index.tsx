@@ -15,7 +15,7 @@ const Header = () => {
   const { auth: { user }, theme: { mode } } = useSelector((state) => state);
 
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
-  const fullName = `${user?.firstName} ${user?.lastName}`;
+  const fullName = user ? `${user?.firstName} ${user?.lastName}` : 'unknown';
 
   return (
     <Styled.Navbar>

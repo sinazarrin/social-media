@@ -13,3 +13,9 @@ export const registerSchema = z.object({
     message: "Passwords must be the same",
     path: ["confirmPassword"]
 });
+
+
+export const LoginSchema = z.object({
+    email: z.string().min(1, 'email is required').email(),
+    password: z.string().min(1, 'password is required').min(5).max(20, 'password should not exceed 20 characters'),
+})

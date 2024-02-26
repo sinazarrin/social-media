@@ -4,7 +4,6 @@ import { Box, useMediaQuery } from "@mui/material";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from '@hookform/resolvers/zod'
 import { registerSchema } from '@/validation/validationSchema';
-import { useTheme } from '@emotion/react';
 import Button from '@/components/Form/Button';
 import { RegisterContainer } from './styled';
 
@@ -92,7 +91,7 @@ const Register: React.FC = () => {
               label="confirmPassword"
               type="password"
               sx={{ gridColumn: "span 4" }} />
-            <Button  fullWidth type="submit">REGISTER</Button>
+            <Button fullWidth type="submit">REGISTER</Button>
           </Box>
         </form>
       </Box>

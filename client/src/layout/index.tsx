@@ -1,16 +1,17 @@
 import { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from './Header'
-import { Container } from './styled'
+import { CssBaseline, Grid } from '@mui/material'
 
 const Layout = () => {
   return (
-    <Container>
+    <Grid>
+      <CssBaseline />
       <Header />
       <Suspense fallback="loading...">
         <Outlet />
       </Suspense>
-    </Container>
+    </Grid>
   )
 }
 
